@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>R. Ray's Remodeling & Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"> </head>
+
+<body>
+
+    <div id="myNav" class="overlay container">
+        <div class="container">
+            <nav class="navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html">R. Ray's Remodeling</a>
+                    </div>
+
+                    <ul class="nav navbar-nav navbar-right navbar-header">
+                        <li>
+                            <a onclick="closeNav()">
+                                <span class="glyphicon glyphicon-remove"></span>
+
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </nav>
+        </div>
+        <!--        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>-->
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="work.html">Work Porfolio</a>
+        </div>
+    </div>
+    <!--     ----->
+    <div class="container">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">R. Ray's Remodeling</a>
+                </div>
+
+                <ul class="nav navbar-nav navbar-right navbar-header">
+                    <li>
+                        <a onclick="openNav()">
+                            <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class=" hamb">
+
+                <!--                <a onclick="openNav()">-->
+                <button data-toggle="collapse" data-target="#navres">
+                    <span class="glyphicon glyphicon-menu-hamburger"></span></button>
+
+            </div>
+        </nav>
+    </div>
+    <hr>
+
+    <div id="navres" class="collapse">
+        <ul class="nav nav-stacked">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li class="active"><a href="work.html">Work Porfolio</a></li>
+        </ul>
+
+    </div>
+
+    <!--..-->
+    <div class="container">
+        <div class="row short-row">
+            <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+                <div class="blogs">
+                    <span class="head">Our Work Porfolio</span>
+                    <span class="date">Posted January 10, 2022</span>
+                    <script>
+                        var slideIndex = 1;
+                            showDivs(slideIndex);
+
+                            function plusDivs(n) {
+                            showDivs(slideIndex += n);
+                            }
+
+                            function showDivs(n) {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            if (n > x.length) {slideIndex = 1}
+                            if (n < 1) {slideIndex = x.length} ;
+                            for (i = 0; i < x.length; i++) {
+                                x[i].style.display = "none";
+                            }
+                            x[slideIndex-1].style.display = "block";
+                            }
+                    </script>
+                    <img class="mySlides" src="/assets/images/image1.jpg">
+                    <img class="mySlides" src="assets/images/image2.jpg">
+                    <img class="mySlides" src="assets/images/image3.jpg">
+                    <img class="mySlides" src="assets/images/image4.jpg">
+                    <img class="mySlides" src="assets/images/image5.jpg">
+                    <img class="mySlides" src="assets/images/image6.jpg">
+                    <img class="mySlides" src="assets/images/image7.jpg">
+                    
+                    <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button><button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button><button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+                    <p>Here we have a slide show displaying some of our work process. As we continue to promote our small business, we will add more before and after images. For now, we will be displaying a slideshow with our work in progress.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--    ----->
+    <footer>
+        <div class="container ">
+            <div class="row text-cen">
+
+
+                <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12 ">
+                    <ul class="menus ">
+                        <span>Menu</span>
+                        <li style="padding:0 0 12px 0; ">
+                            <a href="index.html">Home</a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">About</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+
+                        <li>
+                            <a href="work.html">Work Porfolio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+    <div class="main-foot ">
+        <div class="container ">
+            <p class="pull-left pl ">Coded with <span class="glyphicon glyphicon-heart ">
+                </span> by Miriam Santana | R. Ray's Remodeling &copy;</p>
+            <ul class="social pull-right ">
+
+                <li>
+                    <a href="# "><i class="fa fa-facebook "></i></a>
+                </li>
+
+                <li>
+                    <a href="# "><i class="fa fa-twitter "></i></a>
+                </li>
+
+
+                <li>
+                    <a href="# "><i class="fa fa-pinterest "></i></a>
+                </li>
+
+                <li>
+                    <a href="# "><i class="fa fa-linkedin "></i></a>
+                </li>
+
+
+
+            </ul>
+        </div>
+    </div>
+
+    <script src="library/main.js"></script>
+</body>
+
+</html>
